@@ -18,8 +18,8 @@ public class UserController {
 
     @PostMapping("/")
     public void create(@RequestBody UserModel UserModel){
-        System.out.println(UserModel.name);
-        System.out.println(UserModel.userName);
-        System.out.println(UserModel.password);
+        System.out.println(UserModel.getName());
+        System.out.println(UserModel.getUserName());
+        System.out.println(UserModel.getPassword());
     }
 }

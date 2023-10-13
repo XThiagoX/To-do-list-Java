@@ -1,7 +1,13 @@
 package br.com.thiagoAraujo.todolist.user;
 
+import lombok.Data;
+
+@Data
 public class UserModel {
-    public String userName;
-    public String name;
-    public String password;
+    private String userName;
+    private String name;
+    private String password;
+
+   
+    
 }

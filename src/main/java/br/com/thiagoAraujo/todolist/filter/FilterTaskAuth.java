@@ -3,7 +3,7 @@ package br.com.thiagoAraujo.todolist.filter;
 import java.io.IOException;
 import java.util.Base64;
 
-import org.hibernate.annotations.Comment;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -51,6 +51,7 @@ public class FilterTaskAuth extends OncePerRequestFilter {
                     //validar senha
                     var passeordVerify = BCrypt.verifyer().verify(password.toCharArray(), user.getPassword());
                     if (passeordVerify.verified) {
+                        request.setAttribute("IdUser", user.getId());
                         filterChain.doFilter(request, response);
                     }else{
                     response.sendError(401);

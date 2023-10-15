@@ -8,9 +8,12 @@ import org.springframework.http.HttpStatus;
 //import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -46,5 +49,12 @@ public class TaskController {
         var IdUser = request.getAttribute("IdUser");
         var tasksList = this.taskRepository.findByIdUser((UUID)IdUser);
         return tasksList;
+    }
+    @PutMapping("/{id}")
+    public TaskModel update(@RequestBody TaskModel taskModel, HttpServletRequest request, @PathVariable UUID id){
+        var IdUser = request.getAttribute("IdUser");
+        taskModel.setIdUser((UUID)IdUser);
+        taskModel.setId(id);
+        return this.taskRepository.save(taskModel);
     }
 }

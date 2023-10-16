@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.HttpClientErrorException.BadRequest;
 
 import br.com.thiagoAraujo.todolist.utils.Utils;
 import jakarta.servlet.http.HttpServletRequest;
@@ -22,7 +21,6 @@ import jakarta.servlet.http.HttpServletRequest;
 @RestController
 @RequestMapping("/tasks/")
 public class TaskController {
-
 
     @Autowired
     private ITaskRepository taskRepository;

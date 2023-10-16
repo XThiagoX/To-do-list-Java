@@ -1,0 +1,10 @@
+/home/thiago/UFF/Programação Orientada a Objetos/To do List Java/src/main/java/br/com/thiagoAraujo/todolist/utils/Utils.java
+/home/thiago/UFF/Programação Orientada a Objetos/To do List Java/src/main/java/br/com/thiagoAraujo/todolist/task/TaskModel.java
+/home/thiago/UFF/Programação Orientada a Objetos/To do List Java/src/main/java/br/com/thiagoAraujo/todolist/filter/FilterTaskAuth.java
+/home/thiago/UFF/Programação Orientada a Objetos/To do List Java/src/main/java/br/com/thiagoAraujo/todolist/TodolistApplication.java
+/home/thiago/UFF/Programação Orientada a Objetos/To do List Java/src/main/java/br/com/thiagoAraujo/todolist/task/TaskController.java
+/home/thiago/UFF/Programação Orientada a Objetos/To do List Java/src/main/java/br/com/thiagoAraujo/todolist/errors/ExceptionHandlerController.java
+/home/thiago/UFF/Programação Orientada a Objetos/To do List Java/src/main/java/br/com/thiagoAraujo/todolist/user/UserModel.java
+/home/thiago/UFF/Programação Orientada a Objetos/To do List Java/src/main/java/br/com/thiagoAraujo/todolist/user/UserController.java
+/home/thiago/UFF/Programação Orientada a Objetos/To do List Java/src/main/java/br/com/thiagoAraujo/todolist/task/ITaskRepository.java
+/home/thiago/UFF/Programação Orientada a Objetos/To do List Java/src/main/java/br/com/thiagoAraujo/todolist/user/IUserRepository.java
